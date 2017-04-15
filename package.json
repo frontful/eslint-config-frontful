@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-frontful",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "private": false,
   "description": "Configuration provider for eslint",
   "license": "MIT",
@@ -9,6 +9,7 @@
     "url": "https://github.com/frontful/eslint-config-frontful.git"
   },
   "main": "./index.js",
+  "scripts": {},
   "eslintConfig": {
     "extends": "./index.js"
   },
