@@ -1,7 +1,7 @@
 {
   "name": "eslint-config-frontful",
-  "version": "0.0.4",
-  "private": false,
+  "version": "0.0.11",
+  "private": true,
   "description": "Configuration provider for eslint",
   "license": "MIT",
   "repository": {
@@ -9,9 +9,9 @@
     "url": "https://github.com/frontful/eslint-config-frontful.git"
   },
   "main": "./index.js",
-  "scripts": {},
-  "eslintConfig": {
-    "extends": "./index.js"
+  "scripts": {
+    "build": "babel-preset-frontful build",
+    "deploy": "babel-preset-frontful deploy"
   },
   "dependencies": {
     "babel-eslint": "^7.2.1",
@@ -19,6 +19,10 @@
     "eslint-plugin-import": "^2.2.0",
     "eslint-plugin-jsx-a11y": "^4.0.0",
     "eslint-plugin-react": "^6.10.3",
+    "frontful-config": "0.x || 1.x",
     "object-path": "^0.11.4"
+  },
+  "devDependencies": {
+    "babel-preset-frontful": "0.x || 1.x"
   }
 }
