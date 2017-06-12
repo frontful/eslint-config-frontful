@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-frontful",
-  "version": "0.0.17",
+  "version": "0.0.19",
   "private": true,
   "description": "Eslint configuration provider",
   "license": "MIT",
@@ -15,7 +15,7 @@
   },
   "dependencies": {
     "babel-eslint": "^7.2.1",
-    "eslint": "^3.19.0",
+    "eslint": "3.x",
     "eslint-plugin-import": "^2.2.0",
     "eslint-plugin-jsx-a11y": "^5.0.1",
     "eslint-plugin-react": "^7.0.0",
