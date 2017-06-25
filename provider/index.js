@@ -4,7 +4,6 @@ module.exports = function provider() {
     parser: 'babel-eslint',
     plugins: [
       'import',
-      'jsx-a11y',
       'react',
     ],
     env: {
@@ -158,12 +157,6 @@ module.exports = function provider() {
       'react/no-is-mounted': 'warn',
       'react/react-in-jsx-scope': 'warn',
       'react/require-render-return': 'warn',
-
-      // https://github.com/evcohen/eslint-plugin-jsx-a11y/tree/master/docs/rules
-      'jsx-a11y/aria-role': 'warn',
-      'jsx-a11y/alt-text': 'warn',
-      'jsx-a11y/img-redundant-alt': 'warn',
-      'jsx-a11y/no-access-key': 'warn',
     },
   }
 }
