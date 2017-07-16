@@ -1,4 +1,6 @@
-module.exports = function provider() {
+module.exports = function provider(options) { // eslint-disable-line
+  options = Object.assign({}, options)
+
   return {
     root: true,
     parser: 'babel-eslint',

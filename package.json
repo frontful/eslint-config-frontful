@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-frontful",
-  "version": "0.0.22",
+  "version": "0.0.24",
   "private": true,
   "description": "Eslint configuration provider",
   "license": "MIT",
@@ -10,8 +10,10 @@
   },
   "main": "./index.js",
   "scripts": {
-    "build": "babel-preset-frontful build",
-    "deploy": "babel-preset-frontful deploy"
+    "build": "yarn test && babel-preset-frontful build",
+    "deploy": "yarn test && babel-preset-frontful deploy",
+    "test": "yarn test:eslint",
+    "test:eslint": "node ./node_modules/eslint/bin/eslint.js --max-warnings 0 ."
   },
   "dependencies": {
     "babel-eslint": "^7.2.1",

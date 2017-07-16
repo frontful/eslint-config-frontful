@@ -4,12 +4,6 @@ const objectPath = require('object-path')
 
 const customConfig = objectPath(providerPackage('frontful.config') || {})
 
-const mergedConfig = (
-  customConfig.get('config') ||
-  require('../provider')(
-    customConfig.get('options') ||
-    defaultConfig.options
-  )
-)
+const mergedConfig = customConfig.get('config') || require('../provider')(Object.assign({}, defaultConfig.options, customConfig.get('options')))
 
 module.exports = mergedConfig
