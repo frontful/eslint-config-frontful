@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-frontful",
-  "version": "1.0.0",
+  "version": "2.0.1",
   "private": true,
   "description": "Eslint configuration provider",
   "license": "MIT",
@@ -16,14 +16,14 @@
     "test:eslint": "node ./node_modules/eslint/bin/eslint.js --max-warnings 0 ."
   },
   "dependencies": {
-    "babel-eslint": "^7.2.1",
+    "babel-eslint": "^8.0.1",
     "eslint": "^4.1.0",
     "eslint-plugin-import": "^2.2.0",
     "eslint-plugin-react": "^7.0.0",
-    "frontful-config": "0.x || 1.x",
+    "frontful-config": "2.x",
     "object-path": "^0.11.4"
   },
   "devDependencies": {
-    "babel-preset-frontful": "0.x || 1.x"
+    "babel-preset-frontful": "2.x"
   }
 }
