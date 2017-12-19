@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-frontful",
-  "version": "2.0.1",
+  "version": "2.0.3",
   "private": true,
   "description": "Eslint configuration provider",
   "license": "MIT",
