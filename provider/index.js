@@ -33,6 +33,9 @@ module.exports = function provider(options) { // eslint-disable-line
         node: {
           extensions: ['.js', '.jsx', '.json']
         }
+      },
+      react: {
+        version: 'latest',
       }
     },
     rules: {
@@ -131,7 +134,6 @@ module.exports = function provider(options) { // eslint-disable-line
       'unicode-bom': ['warn', 'never'],
       'use-isnan': 'warn',
       'valid-typeof': 'warn',
-
       // https://github.com/benmosher/eslint-plugin-import/blob/master/docs/rules/
       'import/default': 'warn',
       'import/export': 'warn',
@@ -143,7 +145,6 @@ module.exports = function provider(options) { // eslint-disable-line
       'import/no-named-as-default': 'warn',
       'import/no-named-as-default-member': 'warn',
       'import/no-unresolved': ['warn', { commonjs: true }],
-
       // https://github.com/yannickcr/eslint-plugin-react/tree/master/docs/rules
       'react/jsx-equals-spacing': ['warn', 'never'],
       'react/jsx-no-duplicate-props': ['warn', { ignoreCase: true }],

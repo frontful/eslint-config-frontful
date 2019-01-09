@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-frontful",
-  "version": "3.0.12",
+  "version": "3.0.13",
   "private": true,
   "description": "Eslint configuration provider",
   "license": "MIT",
@@ -19,7 +19,7 @@
     "registry": "https://registry.npmjs.org/"
   },
   "dependencies": {
-    "babel-eslint": "^8.0.1",
+    "babel-eslint": "^10.0.1",
     "eslint": "^5.0.1",
     "eslint-plugin-import": "^2.2.0",
     "eslint-plugin-react": "^7.0.0",
